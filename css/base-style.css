@@ -1,27 +1,26 @@
 @font-face {
-    font-family: "Open Sans";
-    src:
-        local("Open Sans Regular"),
-        local("OpenSans-Regular"),
-        url(../fonts/OpenSans-Regular.ttf);
-    font-weight: normal;
+  font-family: "Open Sans";
+  src:
+    local("Open Sans Regular"),
+    local("OpenSans-Regular"),
+    url(../fonts/OpenSans-Regular.ttf);
+  font-weight: normal;
 }
 
 @font-face {
-    font-family: "Open Sans";
-    src:
-        local("Open Sans Bold"),
-        local("OpenSans-Bold"),
-        url(../fonts/OpenSans-Bold.ttf);
-    font-weight: bold;
+  font-family: "Open Sans";
+  src:
+    local("Open Sans Bold"),
+    local("OpenSans-Bold"),
+    url(../fonts/OpenSans-Bold.ttf);
+  font-weight: bold;
 }
 
 html {
-    font-size: 1.205vmax;
     font-family: "Open Sans", sans-serif;
 }
 
 body {
-    margin: 0;
-    background-color: white;
+  margin: 0;
+  background-color: white;
 }

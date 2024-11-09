@@ -1,3 +1,7 @@
+html {
+  font-size: 1.205vmax;
+}
+
 .headline {
   height: 22.4rem;
   width: 100%;
@@ -104,9 +108,7 @@
 
 .content-titles {
   margin: 0;
-  /* margin-bottom: 2.05rem; */
   margin-bottom: 2.25rem;
-
   text-align: center;
 
   font-size: 1rem;
@@ -129,7 +131,6 @@
   display: flex;
   justify-content: space-between;
   height: 15.95rem;
-
 }
 
 .content_trends__item {
@@ -139,7 +140,7 @@
 }
 
 .trends_item__image {
-  opacity: 0.6;
+  opacity: 0.4;
   width: 100%;
   height: 100%;
 }
@@ -205,6 +206,7 @@
   display: flex;
   flex-direction: column;
   width: 70.48%;
+  box-sizing: border-box;
 }
 
 .content_main__posts {
@@ -293,10 +295,6 @@
 .post_content__text p:last-child {
   margin: 0;
 }
-
-
-
-
 
 .main_posts__sidebar {
   display: flex;
