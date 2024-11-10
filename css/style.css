@@ -176,7 +176,7 @@ body {
   flex-direction: column;
   position: absolute;
 
-  border: 0.15rem solid #b59f5b;
+  border: 0.15rem solid rgb(181, 159, 91, 0.6);
   padding: 8.54% 8.54% 8.05%;
 
   right: 4.88%;
@@ -410,8 +410,8 @@ body {
   background-color: #f4f7f6;
 }
 
-.sidebar_last-posts__input:focus {
-  outline: 0.05rem solid #b59f5b;
+.outline-focus:focus {
+  outline: 1px solid #b59f5b;
 }
 
 .sidebar_last-posts__button {
@@ -449,10 +449,6 @@ body {
   background-color: #f4f7f6;
 }
 
-.sidebar_mailing__input:focus {
-  outline: 0.05rem solid #b59f5b;
-}
-
 .sidebar_tags__title {
   margin-bottom: 2.05rem;
 }
@@ -478,7 +474,7 @@ body {
 }
 
 .sidebar_box__tag:hover {
-  border: .15rem solid #b59f5b;
+  border: 3px solid #b59f5b;
   cursor: pointer;
 }
 
@@ -552,7 +548,7 @@ body {
   position: relative;
   flex-grow: 1;
 
-  border: 0.181vmax solid #b59f5b;
+  border: 0.15rem solid rgb(181, 159, 91, 0.6);
   padding: 2.75rem 1.05rem 1.25rem;
   top: -1.6rem;
 }
@@ -790,10 +786,7 @@ body {
 
   font-size: 0.65rem;
   color: #9a9a9a;
-}
-
-.feedback_frequency__select:focus {
-  outline: 0.05rem solid #b59f5b;
+  color: rgb(0, 0, 0, 0.54);
 }
 
 .feedback_subscription__text,
@@ -848,10 +841,6 @@ body {
   line-height: 0.65rem;
 
   background-color: #f4f7f6;
-}
-
-.feedback_area__text {
-  outline: 0.05rem solid #b59f5b;
 }
 
 .button-hover:hover {
