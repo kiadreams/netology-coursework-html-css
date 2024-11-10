@@ -55,6 +55,7 @@ html {
 
 .content_trends__box {
   flex-wrap: wrap;
+  gap: 0.1rem;
 }
 
 .content_trends__item {
