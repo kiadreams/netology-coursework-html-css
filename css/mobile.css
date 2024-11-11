@@ -81,6 +81,7 @@ html {
   width: 100%;
   padding: 0 4.43%;
   gap: 2.2rem;
+  margin-bottom: 0.5rem;
 }
 
 .content_main__posts {
@@ -157,6 +158,9 @@ html {
 
 
 
+.main_products__title {
+  margin-bottom: 1.95rem;
+}
 
 .main_products__box {
   flex-wrap: wrap;
@@ -167,8 +171,13 @@ html {
 }
 
 .product__image {
-  width: 14.2rem;
-  height: 14.2rem;
+  width: 14.21rem;
+  height: 14.21rem;
+}
+
+.product_content__title {
+  font-size: 0.85rem;
+  line-height: 0.8rem;
 }
 
 .main_products__item:nth-child(1) .product__image {
@@ -181,4 +190,21 @@ html {
 
 .main_products__item:nth-child(3) .product__image {
   content: url(../images/shop-item-mobile3.jpg);
+}
+
+.info {
+  padding-bottom: 2.3rem;
+}
+
+.info__contacts {
+  width: 91.42%;
+  margin-bottom: 2.5rem;
+}
+
+.forms__feedback {
+  height: 27.2rem;
+  width: 16.5rem;
+  top: calc(50% - 27.2rem/2);
+  left: calc(50% - 16.5rem/2);
+  padding: 1.5rem 1.25rem;
 }
