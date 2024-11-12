@@ -757,6 +757,9 @@ html {
   margin: 0;
   font-size: 0.65rem;
   line-height: 0.5rem;
+}
+
+.feedback_subscription__text {
   margin-bottom: 0.55rem;
 }
 

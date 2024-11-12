@@ -206,5 +206,25 @@ html {
   width: 16.5rem;
   top: calc(50% - 27.2rem/2);
   left: calc(50% - 16.5rem/2);
-  padding: 1.5rem 1.25rem;
+  padding: 1.35rem 1.25rem;
+}
+
+.forms_feedback__button-close {
+  height: 1.3rem;
+  width: 1.3rem;
+  top: -1.6rem;
+}
+
+.feedback__title {
+  margin-bottom: 2.3rem;
+}
+
+.feedback_subscription__text {
+  margin-bottom: 0.6rem;
+}
+
+.feedback_subscription__lebel-text::before {
+  width: 1.15rem;
+  height: 1.15rem;
+  margin-right: 0.35rem;
 }
