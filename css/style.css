@@ -572,10 +572,10 @@ html {
 .price-box_prices__old-price::after {
   content: "";
   position: absolute;
-  height: 1px;
+  height: 0.05rem;
   width: 100%;
   background-color: black;
-  bottom: 37%;
+  bottom: 41%;
   left: 0%;
 }
 
@@ -591,7 +591,7 @@ html {
 .currency-ruble::after {
   content: "";
   position: absolute;
-  height: 1px;
+  height: 0.1rem;
   width: 65%;
   bottom: 28%;
   left: 17%;
