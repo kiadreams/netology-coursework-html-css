@@ -1,29 +1,5 @@
-@font-face {
-  font-family: "Open Sans";
-  src:
-    local("Open Sans Regular"),
-    local("OpenSans-Regular"),
-    url(../fonts/OpenSans-Regular.ttf);
-  font-weight: normal;
-}
-
-@font-face {
-  font-family: "Open Sans";
-  src:
-    local("Open Sans Bold"),
-    local("OpenSans-Bold"),
-    url(../fonts/OpenSans-Bold.ttf);
-  font-weight: bold;
-}
-
 html {
   font-size: 1.205vmax;
-  font-family: "Open Sans", sans-serif;
-}
-
-body {
-  margin: 0;
-  background-color: white;
 }
 
 .headline {
@@ -55,6 +31,7 @@ body {
   width: 10.78%;
   background-image: url(../icons/noemi-logo.svg);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .headline__menu {
@@ -123,8 +100,6 @@ body {
 }
 
 .content__trends {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   padding-top: 3.55%;
   margin-bottom: 3.85%;
@@ -133,7 +108,6 @@ body {
 .content-titles {
   margin: 0;
   margin-bottom: 2.25rem;
-
   text-align: center;
 
   font-size: 1rem;
@@ -146,7 +120,7 @@ body {
   content: "";
   position: absolute;
   background-color: #e1d9bd;
-  height: 0.15rem;
+  height: 3px;
   width: 3.3rem;
   bottom: -0.85rem;
   left: calc(50% - 3.4rem/2);
@@ -154,52 +128,58 @@ body {
 
 .content_trends__box {
   display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
   justify-content: space-between;
-  height: 15.95rem;
-
 }
 
 .content_trends__item {
   width: 24.7%;
   position: relative;
   background: black;
+  height: 15.95rem;
+  overflow: hidden;
 }
 
 .trends_item__image {
   opacity: 0.4;
-  width: 100%;
   height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: bottom;
 }
 
 .trends_item__content {
   display: flex;
   flex-direction: column;
   position: absolute;
+  border: 3px solid rgb(181, 159, 91, 0.6);
+  padding: 9.27% 8.05% 7.81%;
 
-  border: 0.15rem solid rgb(181, 159, 91, 0.6);
-  padding: 8.54% 8.54% 8.05%;
-
-  right: 4.88%;
-  left: 4.88%;
-  bottom: 5.01%;
+  inset: auto 5.12% 4.7%;
 }
 
-.trend_content__tags {
+.list-tags-style {
   display: flex;
-
-  margin: 0 0 0.3rem 0;
+  margin: 0;
   padding: 0;
+  gap: 1rem;
 
   list-style-type: none;
 }
 
+.trend_content__tags {
+  margin-bottom: 0.7rem;
+}
+
+
 .tag-style {
   display: block;
   margin: 0;
-  margin-right: 1rem;
 
   color: #b59f5b;
   font-size: 0.7rem;
+  line-height: 0.5rem;
   text-transform: uppercase;
   font-weight: bold;
   text-decoration: none;
@@ -211,7 +191,6 @@ body {
 
 .trend_content__header {
   font-size: 0;
-  line-height: 0;
 }
 
 .trend_header__title {
@@ -232,30 +211,27 @@ body {
   display: flex;
   flex-direction: column;
   width: 70.48%;
+  box-sizing: border-box;
+  gap: 3.2rem;
+  margin-bottom: 1.6rem;
 }
 
 .content_main__posts {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 3.2rem;
+  gap: 6.2rem;
   align-items: flex-start;
 }
 
 .main_posts__box {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  gap: 3.03rem;
   width: 66.24%;
 }
 
 .main_posts__item {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 2.95rem;
-}
-
-.main_posts__item:last-child {
-  margin-bottom: 0;
+  gap: 1.5rem;
 }
 
 .posts_item__image {
@@ -272,12 +248,7 @@ body {
 }
 
 .post_headline__tags {
-  display: flex;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 0.325rem;
-
-  list-style-type: none;
+  margin-bottom: 0.5rem;
 }
 
 .post_headline__title {
@@ -286,39 +257,39 @@ body {
   color: black;
   text-transform: uppercase;
   line-height: 1.2rem;
-  margin-bottom: 1.4rem;
+  margin-bottom: 1.5rem;
 }
 
 .post_headline__remark {
   display: flex;
-  margin-bottom: 2.3rem;
+  gap: 0.6rem;
+  margin-bottom: 2.5rem;
+
+
+  font-size: 0.6rem;
+  line-height: 0.6rem;
 }
 
 .post_remark__date {
   color: #888888;
-  margin-right: 0.65rem;
-  font-size: 0.6rem;
 }
 
 .post_remark__author {
   font-weight: bold;
-  font-size: 0.6rem;
 }
 
 .post_content__text {
   display: flex;
+  font-size: 0;
   flex-direction: column;
-  justify-content: flex-start;
-  flex-grow: 1;
+  gap: 0.25rem;
 }
 
 .post_content__text p {
   margin: 0;
-  margin-bottom: 0.42rem;
-}
 
-.post_content__text p:last-child {
-  margin: 0;
+  font-size: 0.75rem;
+  line-height: 1.1rem;
 }
 
 .main_posts__sidebar {
@@ -342,42 +313,40 @@ body {
   content: "";
   position: absolute;
   background-color: #e1d9bd;
-  height: 0.15rem;
+  height: 3px;
   width: 3.3rem;
   bottom: -0.7rem;
   left: calc(50% - 3.4rem/2);
 }
 
 .sidebar_last-posts__title {
-  margin-bottom: 2.3rem;
+  margin-bottom: 2.25rem;
 }
 
 .sidebar_last-posts__box {
   display: flex;
   flex-direction: column;
+  gap: 1.1rem;
   margin-bottom: 3rem;
 }
 
 .sidebar_last-posts__item {
   display: flex;
-  margin-bottom: 1.1rem;
-}
-
-.sidebar_last-posts__item:last-child {
-  margin: 0;
+  gap: 1rem;
 }
 
 .sidebar_last-post__image {
   display: flex;
   height: 3.5rem;
   width: 3.5rem;
+  font-size: 0.5em;
 }
 
 .sidebar_last-post__headline {
   display: flex;
   flex-direction: column;
   width: 66.78%;
-  margin-left: auto;
+  flex-grow: 1;
 }
 
 .last-post_headline__title {
@@ -401,13 +370,13 @@ body {
 }
 
 .sidebar_last-posts__input {
-  width: 81.91%;
+  flex-grow: 1;
   padding-left: 0.95rem;
+
+  background-color: #f4f7f6;
 
   font-size: 0.65rem;
   line-height: 0.5rem;
-
-  background-color: #f4f7f6;
 }
 
 .outline-focus:focus {
@@ -519,7 +488,6 @@ body {
 .content_main__products {
   display: flex;
   flex-direction: column;
-  margin-bottom: 1.6rem;
 }
 
 .main_products__box {
@@ -548,21 +516,24 @@ body {
   position: relative;
   flex-grow: 1;
 
-  border: 0.15rem solid rgb(181, 159, 91, 0.6);
-  padding: 2.75rem 1.05rem 1.25rem;
+  border: 3px solid rgb(181, 159, 91, 0.6);
+  padding: 2.52rem 1.05rem 1.25rem;
   top: -1.6rem;
 }
 
 .product_content__title {
   margin: 0;
+  margin-bottom: 0.28rem;
+
   font-weight: bold;
   text-transform: uppercase;
   font-size: 1rem;
-  margin-bottom: 0.2rem;
+  line-height: 1rem;
 }
 
 .product_content__text {
   font-size: 0.75rem;
+  line-height: 1.1rem;
   margin-bottom: 1.2rem;
 }
 
@@ -601,10 +572,10 @@ body {
 .price-box_prices__old-price::after {
   content: "";
   position: absolute;
-  height: 0.05rem;
+  height: 1px;
   width: 100%;
   background-color: black;
-  bottom: 41%;
+  bottom: 37%;
   left: 0%;
 }
 
@@ -620,7 +591,7 @@ body {
 .currency-ruble::after {
   content: "";
   position: absolute;
-  height: 7%;
+  height: 1px;
   width: 65%;
   bottom: 28%;
   left: 17%;
@@ -647,8 +618,7 @@ body {
   justify-content: center;
   height: 4.1rem;
   width: 70.48%;
-  margin: 0 auto;
-  margin-bottom: 3.7rem;
+  margin: 0 auto 3.7rem;
 
   background-color: #f4f7f6;
 }
@@ -659,32 +629,24 @@ body {
   justify-content: space-between;
   list-style-type: none;
   padding: 0;
-  width: 18.29%;
+  width: 5.5rem;
 }
 
 .contacts_item__link {
   display: block;
-  width: 1.05rem;
-  height: 1.05rem;
+  width: 0.95rem;
+  height: 0.95rem;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
 }
 
 .icon-twitter {
-  background-image: url(../icons/004-twitter.svg);
+  background-image: url(../icons/001-dribbble.svg);
 }
 
 .icon-pinterest {
   background-image: url(../icons/001-pinterest.svg);
-}
-
-.icon-facebook {
-  background-image: url(../icons/002-facebook-logo.svg);
-}
-
-.icon-instagram {
-  background-image: url(../icons/005-instagram.svg);
 }
 
 .icon-tumblr {
@@ -700,9 +662,12 @@ body {
   font-size: 0.6rem;
 }
 
+
+
 .forms__background {
-  content: "";
   position: fixed;
+  width: 100%;
+  height: 100%;
   inset: 0;
 
   background-color: #000;
@@ -713,10 +678,9 @@ body {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  content: "";
   position: fixed;
-  width: 19.5rem;
   height: 29.4rem;
+  width: 19.5rem;
   top: calc(50% - 29.4rem/2);
   left: calc(50% - 19.5rem/2);
   padding: 2.7rem 1.5rem;
@@ -785,7 +749,6 @@ body {
   background-position: right 0.7rem center;
 
   font-size: 0.65rem;
-  color: #9a9a9a;
   color: rgb(0, 0, 0, 0.54);
 }
 
@@ -794,6 +757,9 @@ body {
   margin: 0;
   font-size: 0.65rem;
   line-height: 0.5rem;
+}
+
+.feedback_subscription__text {
   margin-bottom: 0.55rem;
 }
 
