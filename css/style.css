@@ -2,41 +2,12 @@ html {
   font-size: 1.205vmax;
 }
 
-.headline {
-  height: 22.4rem;
-  width: 100%;
-  box-sizing: border-box;
-  background-image: url(../images/banner-bg.jpg);
-  background-position: top;
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: relative;
-  padding-top: 2.08rem;
-}
-
 .headline::before {
   content: "";
   background-color: black;
   position: absolute;
   inset: 0;
   opacity: 0.6;
-}
-
-.headline::after {
-  content: "";
-  position: absolute;
-  left: 14.94%;
-  top: 6.47%;
-  height: 9.15%;
-  width: 10.78%;
-  background-image: url(../icons/noemi-logo.svg);
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.headline__menu {
-  position: relative;
-  margin-bottom: 6.93%;
 }
 
 .interactive-element {
@@ -59,18 +30,55 @@ html {
   cursor: pointer;
 }
 
+.headline {
+  display: flex;
+  position: relative;
+  height: 449px;
+  width: 100%;
+
+  justify-content: center;
+  background-image: url(../images/banner-bg.jpg);
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.headline__content {
+  width: 100%;
+  max-width: 1200px;
+  padding-top: 28px;
+}
+
+.headline__menu {
+  display: flex;
+  padding: 0 1.25%;
+  height: 41px;
+  margin-bottom: 104px;
+}
+
+.headline__logo img {
+  position: relative;
+  width: 15.08%;
+  width: 181px;
+  height: 41px;
+}
+
 .headline_menu__list {
   display: flex;
-  margin: 0;
-  padding: 0 14.7% 0 57.35%;
+  position: relative;
+  width: 463px;
+  margin: 0 0 0 auto;
+  padding: 0;
+
   justify-content: space-between;
+  align-items: center;
+
   list-style-type: none;
 }
 
 .headline_menu__title {
-  display: block;
   color: white;
-  font-size: 0.65rem;
+  font-size: 13px;
   text-transform: uppercase;
   text-decoration: none;
 }
@@ -80,16 +88,15 @@ html {
 }
 
 .headline__title {
-  margin: 0;
-  width: 45%;
+  height: 107px;
+  width: 700px;
   position: relative;
   margin: 0 auto;
 
   color: white;
-  font-size: 2.25rem;
-
+  font-size: 45px;
   text-align: center;
-  line-height: 3.75rem;
+  line-height: 75px;
   text-transform: uppercase;
 }
 
@@ -101,17 +108,17 @@ html {
 
 .content__trends {
   width: 100%;
-  padding-top: 3.55%;
+  padding-top: 59px;
   margin-bottom: 3.85%;
 }
 
 .content-titles {
   margin: 0;
-  margin-bottom: 2.25rem;
+  margin-bottom: 41px;
   text-align: center;
 
-  font-size: 1rem;
-  line-height: 0.7rem;
+  font-size: 20px;
+  line-height: 23px;
   position: relative;
   text-transform: uppercase;
 }
@@ -121,9 +128,9 @@ html {
   position: absolute;
   background-color: #e1d9bd;
   height: 3px;
-  width: 3.3rem;
-  bottom: -0.85rem;
-  left: calc(50% - 3.4rem/2);
+  width: 66px;
+  bottom: -13px;
+  left: calc(50% - 33px);
 }
 
 .content_trends__box {
@@ -210,10 +217,10 @@ html {
 .content__main {
   display: flex;
   flex-direction: column;
-  width: 70.48%;
-  box-sizing: border-box;
-  gap: 3.2rem;
-  margin-bottom: 1.6rem;
+  width: 100%;
+  max-width: 1200px;
+  gap: 4px;
+  margin-bottom: 32px;
 }
 
 .content_main__posts {
