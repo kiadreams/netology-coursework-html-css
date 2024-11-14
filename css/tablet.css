@@ -1,0 +1,11 @@
+html {
+  font-size: 2.605vmin;
+}
+
+
+.headline {
+  height: 19.55rem;
+  padding-top: 1.55rem;
+
+  background-image: url(../images/banner-bg-tablet.jpg);
+}
